@@ -1,0 +1,8 @@
+node_modules/
+credentials.json
+*.token
+.env
+config.json
+session.json
+artifacts/
+spotify-webplayer-token/bin/

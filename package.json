@@ -1,0 +1,35 @@
+{
+  "name": "mmm-spotifycards",
+  "version": "0.1.0",
+  "description": "Spotify now-playing cards with Spicy Lyrics for MagicMirror²",
+  "main": "MMM-SpotifyCards.js",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test test/*.test.js",
+    "test:browser": "node scripts/test-browser.js",
+    "test:setup-browser": "node scripts/test-setup-browser.js",
+    "auth": "node scripts/authorize.js",
+    "setup": "node scripts/setup.js",
+    "bridge": "node scripts/bridge.js",
+    "bridge:install": "node scripts/install-bridge.js",
+    "test:bridge-browser": "node scripts/test-bridge-browser.js",
+    "credentials": "node scripts/import-credentials.js",
+    "preview": "node scripts/preview.js"
+  },
+  "dependencies": {
+    "@tanstack/virtual-core": "^3.17.11",
+    "cubic-spline": "^3.0.3",
+    "d3-ease": "^3.0.1",
+    "nanostores": "^1.5.3",
+    "playwright": "^1.63.0",
+    "simplebar": "^6.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "esbuild": "^0.28.2"
+  }
+}
